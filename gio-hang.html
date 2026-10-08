@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dootea - Giỏ hàng</title>
+
+
+    <!-- CSS chung -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!-- CSS rieng trang gio hang -->
+    <link rel="stylesheet" href="css/giohang.css">
+</head>
+<body>
+
+
+    <!-- Header dung chung -->
+    <div id="header"></div>
+
+
+    <main class="cart-page">
+        <div class="cart-container">
+            <h1 class="cart-title">Giỏ hàng của bạn</h1>
+
+
+            <!-- Thong bao khi gio hang trong -->
+            <div id="cartEmpty" class="cart-empty" style="display: none;">
+                <p>Giỏ hàng của bạn đang trống.</p>
+                <a href="san-pham.html" class="btn-link">Tiếp tục mua hàng</a>
+            </div>
+
+
+            <!-- Danh sach san pham trong gio hang -->
+            <div id="cartContent" class="cart-content" style="display: none;">
+                <div class="cart-table-wrapper">
+                    <table class="cart-table">
+                        <thead>
+                            <tr>
+                                <th>Sản phẩm</th>
+                                <th>Đơn giá</th>
+                                <th style="text-align: center;">Số lượng</th>
+                                <th>Thành tiền</th>
+                                <th style="text-align: center;">Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cartTableBody">
+                            <!-- Render tu JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <!-- Tong tien va nut Dat hang -->
+                <div class="cart-summary">
+                    <div class="cart-total">
+                        <span class="total-label">Tổng tiền:</span>
+                        <span id="cartTotalPrice" class="total-price">0 đ</span>
+                    </div>
+                    <button type="button" id="btnCheckout" class="btn-checkout" onclick="showOrderForm()">
+                        Đặt hàng
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- Form dat hang (hien thi ngay tren trang gio hang sau khi bam Dat hang) -->
+            <div id="orderSection" class="order-section" style="display: none;">
+                <h2 class="order-title">Thông tin giao hàng</h2>
+
+
+                <form id="orderForm" onsubmit="submitOrder(event)">
+                    <div class="form-group">
+                        <label for="orderName">Họ và tên <span class="required">*</span></label>
+                        <input type="text" id="orderName" required placeholder="Nhập họ và tên người nhận">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="orderPhone">Số điện thoại <span class="required">*</span></label>
+                        <input type="tel" id="orderPhone" required placeholder="Nhập số điện thoại liên hệ">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="orderAddress">Địa chỉ <span class="required">*</span></label>
+                        <input type="text" id="orderAddress" required placeholder="Nhập địa chỉ giao hàng">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="orderNote">Ghi chú</label>
+                        <textarea id="orderNote" rows="3" placeholder="Ghi chú thêm về đơn hàng"></textarea>
+                    </div>
+
+
+                    <!-- San pham da chon va Tong tien -->
+                    <div class="order-review">
+                        <h3>Sản phẩm đã chọn</h3>
+                        <div id="orderReviewItems" class="order-review-items">
+                            <!-- Render tu JavaScript -->
+                        </div>
+                        <div class="order-review-total">
+                            <span>Tổng tiền:</span>
+                            <span id="orderReviewTotalPrice" class="order-total-highlight">0 đ</span>
+                        </div>
+                    </div>
+
+
+                    <div class="order-actions">
+                        <button type="submit" class="btn-confirm">
+                            Xác nhận đặt hàng
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+
+            <!-- Thong bao xac nhan dat hang thanh cong -->
+            <div id="orderSuccessModal" class="order-modal" style="display: none;">
+                <div class="order-modal-content">
+                    <h3>Xác nhận đơn hàng</h3>
+                    <p class="order-success-text">
+                        Đặt hàng thành công! Cảm ơn bạn đã lựa chọn sản phẩm của Dootea. Dootea sẽ liên hệ với bạn qua số điện thoại để xác nhận đơn hàng. Phí vận chuyển sẽ được thông báo khi xác nhận đơn hàng.
+                    </p>
+                    <div id="orderReceiptBox" class="receipt-box"></div>
+                    <div class="order-modal-actions">
+                        <a href="san-pham.html" class="btn-link">Tiếp tục mua hàng</a>
+                        <button type="button" class="btn-close-modal" onclick="closeSuccessModal()">Đóng</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+
+
+    <!-- Footer dung chung -->
+    <div id="footer"></div>
+
+
+    <!-- JavaScript -->
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
