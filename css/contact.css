@@ -10,6 +10,7 @@
 .contact-page {
     background-color: #fffdf9;
     color: #333;
+    font-family: "Times New Roman", Times, serif;
 }
 
 
@@ -154,7 +155,7 @@
 
     margin: 0 0 5px;
 
-    color: #fffdf9;
+    color: #725039;
 
     font-size: 19px;
 
@@ -183,7 +184,7 @@
 
 
 .contact-page .contact-item a:hover {
-    color: #fffdf9;
+    color: #725039;
 
     text-decoration: underline;
 }

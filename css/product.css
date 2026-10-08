@@ -37,7 +37,7 @@
 }
 
 .product-intro h1 {
-    font-size: 42px;
+    font-size: 50px;
     line-height: 1.2;
     margin-block-start: 20px;
     color: var(--forest);
@@ -48,7 +48,7 @@
 }
 
 .product-intro p {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.6;
     color: var(--leaf);
 }
@@ -98,20 +98,20 @@
 ========================= */
 
 .product-info h2 {
-    font-size: 22px;
+    font-size: 25px;
     margin: 18px 0 8px;
     color: var(--forest);
 }
 
 .product-price {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
     color: var(--leaf);
 }
 
 .product-description {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.6;
     margin-bottom: 15px;
     color: var(--forest);
@@ -129,6 +129,7 @@
     background-color: var(--forest);
     color: #fffdf9;
     cursor: pointer;
+    font-size: 15px;
 }
 
 .add-cart:hover {

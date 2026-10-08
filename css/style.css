@@ -14,7 +14,7 @@ body {
     margin: 0;
     background: var(--background);
     color: var(--forest);
-    font-family: Arial, sans-serif;
+    font-family: "Times New Roman", Times, serif;
 }
 
 p {
@@ -71,8 +71,6 @@ nav {
     border-radius: 6px;
 
     gap: 0;
-
-    font-family: Arial, sans-serif;
 }
 
 
@@ -85,11 +83,9 @@ nav a {
 
     color: white;
 
-    font-family: Arial, sans-serif !important;
+    font-size: 20px;
 
-    font-size: 20px !important;
-
-    font-weight: bold !important;
+    font-weight: bold;
 
     text-transform: uppercase;
 
@@ -127,9 +123,6 @@ footer {
 
     padding: 50px 8% 20px;
 
-    font-family: "Times New Roman", serif;
-
-    /* THANH NÂU NGĂN CÁCH */
     border-top: 6px solid #765237;
 }
 

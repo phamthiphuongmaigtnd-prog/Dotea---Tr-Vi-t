@@ -3,9 +3,11 @@
 ========================= */
 
 .about-page {
+
     background: var(--background);
+
     color: var(--forest);
-    font-family: Georgia, "Times New Roman", serif;
+
 }
 
 
@@ -14,9 +16,13 @@
 ========================= */
 
 .content-width {
+
     width: 80%;
+
     max-width: 1100px;
+
     margin: 0 auto;
+
 }
 
 
@@ -25,65 +31,102 @@
 ========================= */
 
 .about-hero {
+
     width: 100%;
+
     height: auto;
+
     overflow: hidden;
+
 }
 
 .about-hero > img {
+
     width: 100%;
+
     height: auto;
+
     display: block;
+
     object-fit: contain;
+
 }
+
 
 /* =========================
    GIỚI THIỆU
 ========================= */
 
 .about-intro {
+
     padding: 130px 0;
+
 }
 
 .about-page .section-marker {
+
     color: var(--forest);
-    font-family: Arial, sans-serif;
+
     font-size: 20px;
+
     font-weight: bold;
+
     letter-spacing: 1px;
+
     text-transform: uppercase;
+
 }
 
 .about-page .section-marker span {
+
     color: var(--secondary);
+
     display: inline-block;
+
     margin: 0 8px;
+
     line-height: 1;
+
     vertical-align: middle;
+
 }
 
 .intro-copy {
+
     display: grid;
+
     grid-template-columns: 1fr 1fr;
+
     gap: 10%;
+
     margin-top: 40px;
+
 }
 
 .about-page h2 {
+
     color: var(--forest);
-    font-size: clamp(40px, 4vw, 58px);
+
+    font-size: clamp(34px, 3.2vw, 48px);
+
     font-weight: normal;
-    line-height: 1.05;
+
+    line-height: 1.1;
+
 }
 
 .intro-text,
 .feature-copy > p,
 .process-copy > p {
+
     color: var(--forest);
-    font-family: Arial, sans-serif;
-    font-size: 18px;
+
+    font-size: 21px;
+
     line-height: 1.8;
+
     text-align: justify;
+
 }
 
 
@@ -92,35 +135,55 @@
 ========================= */
 
 .about-feature {
+
     display: grid;
+
     grid-template-columns: 1.03fr .97fr;
+
     gap: 11%;
+
     align-items: start;
+
 }
 
 .feature-copy {
+
     margin: 0;
+
     padding: 0;
+
 }
 
 .feature-copy h2 {
+
     margin-top: 0;
+
     margin-bottom: 20px;
+
 }
 
 .feature-copy > p {
+
     margin-top: 0;
+
 }
 
 .feature-image img {
+
     display: block;
+
     width: 100%;
+
     height: 420px;
+
     object-fit: cover;
+
 }
 
 .feature-copy .eyebrow {
+
     display: none;
+
 }
 
 
@@ -129,36 +192,57 @@
 ========================= */
 
 .about-process {
+
     background: var(--background);
+
     color: var(--forest);
+
     padding: 120px 0;
+
 }
 
 .process-grid {
+
     display: grid;
+
     grid-template-columns: .9fr 1.1fr;
+
     gap: 11%;
+
     align-items: start;
+
 }
 
 .section-marker.light {
+
     color: var(--forest);
+
     margin-bottom: 50px;
+
 }
 
 .process-copy h2 {
+
     color: var(--forest);
+
 }
 
 .process-copy > p:last-child {
+
     color: var(--forest);
+
 }
 
 .process-image img {
+
     display: block;
+
     width: 100%;
+
     height: 420px;
+
     object-fit: cover;
+
 }
 
 
@@ -167,31 +251,53 @@
 ========================= */
 
 .about-belief {
+
     background: var(--background);
+
     padding: 135px 0 140px;
+
     text-align: center;
+
 }
 
 .section-divider {
+
     width: 100%;
+
     height: 3px;
+
     background: var(--secondary);
+
     margin: 0 auto;
+
 }
 
 .about-belief .eyebrow {
+
     color: var(--forest);
+
     font-size: 15px;
+
     margin-bottom: 20px;
+
     font-weight: bold;
+
     letter-spacing: 2px;
+
     text-transform: uppercase;
+
 }
 
 .about-belief blockquote {
+
     color: var(--forest);
+
     font-size: clamp(28px, 3.7vw, 48px);
+
     line-height: 1.25;
+
     max-width: 900px;
+
     margin: 35px auto;
+
 }
