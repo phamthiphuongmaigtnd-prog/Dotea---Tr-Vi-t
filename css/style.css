@@ -116,171 +116,192 @@ nav a:hover {
 ========================= */
 
 footer {
-
     background-color: #fffdf9;
-
     color: #333;
-
-    padding: 50px 8% 20px;
-
+    padding: 50px 6% 20px;
     border-top: 6px solid #765237;
+    box-sizing: border-box;
 }
-
 
 /* =========================
    KHU VỰC 4 CỘT
 ========================= */
 
 .footer-content {
-
     display: grid;
-
-    grid-template-columns: repeat(4, 1fr);
-
-    gap: 60px;
-
-    max-width: 1200px;
-
+    grid-template-columns: 1.1fr 1fr 1fr 1.2fr;
+    gap: 40px;
+    max-width: 1400px;
     margin: 0 auto;
-
     align-items: start;
 }
-
 
 /* =========================
    TỪNG CỘT
 ========================= */
 
 .footer-column {
-
+    min-width: 0;
     text-align: left;
-
 }
-
 
 /* =========================
    TIÊU ĐỀ FOOTER
 ========================= */
 
 .footer-column h3 {
-
     color: #765237;
-
     font-size: 27px;
-
     margin: 0 0 25px;
-
-    height: 31px;
-
+    min-height: 31px;
     line-height: 31px;
-
     text-align: left;
 }
-
 
 /* =========================
    RIÊNG CỘT DOOTEA
 ========================= */
 
 .footer-column:first-child {
-
     text-align: center;
-
 }
-
 
 .footer-column:first-child h3 {
-
     text-align: center;
-
 }
 
-
 /* =========================
-   NỘI DUNG + LINK
-   ĐỂ CÁC HÀNG THẲNG NHAU
+   NỘI DUNG VÀ LIÊN KẾT
 ========================= */
 
 .footer-column p,
 .footer-column a {
-
     font-size: 19px;
-
     line-height: 30px;
-
-    height: 30px;
-
     margin: 0 0 12px;
-
     padding: 0;
+    box-sizing: border-box;
 }
 
-
-/* NỘI DUNG */
+/* Nội dung thông thường */
 
 .footer-column p {
-
     color: #333;
-
+    height: auto;
 }
 
-
-/* LINK */
+/* Liên kết */
 
 .footer-column a {
-
     display: block;
-
     color: #765237;
-
     text-decoration: none;
-
 }
 
+.footer-column a:hover {
+    color: #94704f;
+}
 
 /* =========================
-   RIÊNG ĐOẠN GIỚI THIỆU DOOTEA
+   ĐOẠN GIỚI THIỆU DOOTEA
 ========================= */
 
 .footer-column:first-child p {
-
     text-align: center;
-
-    height: auto;
-
     line-height: 1.7;
-
+    height: auto;
 }
-
 
 /* =========================
-   HOVER LINK
+   CỘT LIÊN HỆ
 ========================= */
 
-.footer-column a:hover {
-
-    color: #725039;
-
+.footer-column:last-child p {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    height: auto;
+    line-height: 30px;
+    margin-bottom: 18px;
 }
 
+/* Biểu tượng liên hệ */
+
+.footer-column:last-child p span:first-child {
+    flex-shrink: 0;
+}
+
+/* Phần chữ liên hệ */
+
+.footer-column:last-child p span:last-child {
+    min-width: 0;
+    overflow-wrap: break-word;
+}
 
 /* =========================
    FOOTER BOTTOM
 ========================= */
 
 .footer-bottom {
-
-    max-width: 1200px;
-
+    max-width: 1400px;
     margin: 40px auto 0;
-
     padding-top: 20px;
-
     border-top: 1px solid #777;
-
     text-align: center;
-
     font-size: 17px;
-
     color: #333;
 }
+
+/* =========================
+   RESPONSIVE - TABLET
+========================= */
+
+@media (max-width: 1024px) {
+    .footer-content {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 35px;
+    }
+
+    .footer-column:last-child {
+        min-width: 0;
+    }
+}
+
+/* =========================
+   RESPONSIVE - ĐIỆN THOẠI
+========================= */
+
+@media (max-width: 576px) {
+    footer {
+        padding: 35px 6% 20px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .footer-column:first-child {
+        text-align: left;
+    }
+
+    .footer-column:first-child h3,
+    .footer-column:first-child p {
+        text-align: left;
+    }
+
+    .footer-column h3 {
+        font-size: 23px;
+        margin-bottom: 18px;
+    }
+
+    .footer-column p,
+    .footer-column a {
+        font-size: 17px;
+        line-height: 28px;
+    }
+
+    .footer-bottom {
+        margin-top: 25px;
+        font-size: 15px;
+    }
