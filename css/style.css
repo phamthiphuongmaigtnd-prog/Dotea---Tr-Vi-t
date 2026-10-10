@@ -249,6 +249,12 @@ footer {
     height: auto;
 
     line-height: 1.7;
+    
+    color: var(--forest);
+
+    max-width: 230px;
+    
+    margin: 0 auto;
 
 }
 
