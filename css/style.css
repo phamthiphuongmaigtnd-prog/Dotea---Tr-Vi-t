@@ -1,10 +1,10 @@
+
 :root {
     --forest: #725039;
     --leaf: #94704f;
     --secondary: #dbd5d0;
     --background: #fffdf9;
 }
-
 
 /* =========================
    PHẦN CHUNG
@@ -21,7 +21,6 @@ p {
     line-height: 1.7;
 }
 
-
 /* =========================
    HEADER
 ========================= */
@@ -30,14 +29,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 18px 8%;
-
     background-color: white;
-
     border-bottom: 1px solid #ddd;
 }
-
 
 /* =========================
    LOGO HEADER
@@ -51,10 +46,8 @@ header .logo {
 header .logo img {
     width: 80px;
     height: 80px;
-
     object-fit: contain;
 }
-
 
 /* =========================
    MENU
@@ -63,16 +56,11 @@ header .logo img {
 nav {
     display: flex;
     align-items: center;
-
     background-color: #775235;
-
     padding: 18px 30px;
-
     border-radius: 6px;
-
     gap: 0;
 }
-
 
 /* =========================
    CÁC MỤC MENU
@@ -80,22 +68,14 @@ nav {
 
 nav a {
     text-decoration: none;
-
     color: white;
-
     font-size: 20px;
-
     font-weight: bold;
-
     text-transform: uppercase;
-
     letter-spacing: 0.3px;
-
     padding: 0 25px;
-
     border-right: 1px solid #d8c1ad;
 }
-
 
 /* BỎ ĐƯỜNG KẺ Ở MỤC CUỐI */
 
@@ -103,13 +83,11 @@ nav a:last-child {
     border-right: none;
 }
 
-
 /* HIỆU ỨNG KHI DI CHUỘT */
 
 nav a:hover {
     color: #f3dfc1;
 }
-
 
 /* =========================
    FOOTER
@@ -183,14 +161,14 @@ footer {
     box-sizing: border-box;
 }
 
-/* Nội dung thông thường */
+/* NỘI DUNG THÔNG THƯỜNG */
 
 .footer-column p {
     color: #333;
     height: auto;
 }
 
-/* Liên kết */
+/* LIÊN KẾT */
 
 .footer-column a {
     display: block;
@@ -210,6 +188,9 @@ footer {
     text-align: center;
     line-height: 1.7;
     height: auto;
+    color: var(--forest);
+    max-width: 230px;
+    margin: 0 auto;
 }
 
 /* =========================
@@ -225,13 +206,13 @@ footer {
     margin-bottom: 18px;
 }
 
-/* Biểu tượng liên hệ */
+/* BIỂU TƯỢNG LIÊN HỆ */
 
 .footer-column:last-child p span:first-child {
     flex-shrink: 0;
 }
 
-/* Phần chữ liên hệ */
+/* PHẦN CHỮ LIÊN HỆ */
 
 .footer-column:last-child p span:last-child {
     min-width: 0;
@@ -305,3 +286,4 @@ footer {
         margin-top: 25px;
         font-size: 15px;
     }
+}
