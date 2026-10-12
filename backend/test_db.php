@@ -1,5 +1,9 @@
 <?php
-require_once "db.php";
+$conn = new mysqli("localhost", "root", "", "dootea_db");
 
-echo "Kết nối database Dootea thành công!";
+if ($conn->connect_error) {
+    die("Kết nối thất bại: " . $conn->connect_error);
+}
+
+echo "Kết nối database thành công!";
 ?>
