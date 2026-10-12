@@ -111,3 +111,26 @@ h2 {
     width: 100%;
     margin-top: 25px;
 }
+
+/* HIỆU ỨNG HÌNH ẢNH */
+
+.product img,
+.step img {
+    transition: transform 0.4s ease, outline 0.3s ease;
+}
+
+/* SẢN PHẨM NỔI BẬT */
+.product img:hover {
+    outline: 3px solid #725039;
+    outline-offset: -3px;
+}
+
+.product a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* QUY TRÌNH SẢN XUẤT */
+.step img:hover {
+    transform: scale(1.12);
+}
