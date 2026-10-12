@@ -210,6 +210,9 @@ footer {
     text-align: center;
     line-height: 1.7;
     height: auto;
+    color: var(--forest);
+    max-width: 230px;
+    margin: 0 auto;
 }
 
 /* =========================
